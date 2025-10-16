@@ -1,5 +1,5 @@
 ### Docs
-Script was created ONLY for autoFarm in MM2.
+Script was created only for autoFarm in MM2.
 
 > [!WARNING]
 > Script only works with matcha lua-vm.
