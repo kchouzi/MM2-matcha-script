@@ -14,4 +14,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/kchouzi/MM2-matcha-sc
 <img width="434" height="541" alt="21312gdsfsgfdsgfd" src="https://github.com/user-attachments/assets/68463fc9-a829-48fa-bbfb-f8c943e7c3ef" />
 
 ### Made by
---Made by: @kcz1_o (roblox)
+@kcz1_o (roblox)
