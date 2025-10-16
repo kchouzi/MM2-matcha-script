@@ -38,7 +38,7 @@ function collectCoin(coin)
 		if character and humanoidRootPart then
 			humanoidRootPart.Position = coin.Position + Vector3.new(0, -1+math.random()*2, 0)
 		end
-	until not coin:FindFirstChild("TouchInterest") or coin.Transparency > 0
+	until not coin:FindFirstChild("TouchInterest")
 end
 
 function goToLobby()
@@ -64,7 +64,7 @@ while true do
 
 	if os.clock()-lastTeleportClock >= config.teleportCooldown and coinContainer then
 		for _, coin in ipairs(coinContainer:GetChildren()) do
-			if coin:FindFirstChild("TouchInterest") and coin.Transparency == 0 then
+			if coin:FindFirstChild("TouchInterest") then
 				collectCoin(coin)
 
 				lastTeleportClock = os.clock()
