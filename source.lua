@@ -6,12 +6,10 @@ local players = game:GetService("Players")
 
 local player = players.LocalPlayer
 
-local lobby = workspace:FindFirstChild("Lobby")
-
 local config = {
 	teleportCooldown = 1.85, --if you set value lower 1.85, you can be kicked
 	
-	--will be added when getAttribute become available
+	--i will add it soon
 	--targetCoins = {
 	--	"BeachBall"
 	--};
@@ -45,7 +43,7 @@ function goToLobby()
 	local character, humanoidRootPart = getCharacter()
 
 	if character and humanoidRootPart then
-		humanoidRootPart.Position = Vector3.new(132.87, 140.25, 60.69)
+		humanoidRootPart.Position = Vector3.new(14.35, 504.82, -38.25) --not automatic because spawnLocation is not basePart
 	end
 end
 
@@ -72,6 +70,8 @@ while true do
 				break
 			end
 		end
+
+		goToLobby()
 	else
 		goToLobby()
 	end
